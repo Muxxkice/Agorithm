@@ -1,5 +1,6 @@
+//Greatest common divisor
 const main = (input) => {
-	const n = Number(input.split("\n")[0].split(" "));
+
 	const getGcd = (a, b) => {
 		while (a >= 1 && b >= 1) {
 			if (a > b) {
@@ -16,13 +17,14 @@ const main = (input) => {
 		}
 	}
 
-	let line = input.split("\n")[1].split(" ");
-	let x = Number(line[0]);
-	let y = Number(line[1]);
-	let answer = getGcd(x, y)
-	for (let i = 2; i <= n; i++) {
+	const n = Number(input.split("\n")[0]);
+	const line = input.split("\n")[1].split(" ");
+	let answer = getGcd(line[0], line[1]);
+
+	for (let i = 2; i < n; i++) {
 		answer = getGcd(answer, line[i])
 	}
+
 	console.log(answer);
 
 }
