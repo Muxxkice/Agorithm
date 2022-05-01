@@ -1,7 +1,5 @@
 //Print a Rectangle
 const printRectangle = (x, y) => {
-	console.log(x);
-	console.log(y);
 	for (let i = 0; i < x; i++) {
 		for (let j = 0; j < y; j++) {
 			process.stdout.write("#")
@@ -15,8 +13,6 @@ const main = (input) => {
 	line.some((n) => {
 		const h = Number(n.split(" ")[0]);
 		const w = Number(n.split(" ")[1]);
-		console.log(h)
-		console.log(w)
 		if (h == 0 && w == 0) {
 			return true;
 		} else {
