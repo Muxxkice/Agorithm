@@ -1,6 +1,5 @@
 //Finding Missing Cards
 process.stdin.setEncoding('utf8');
-
 const main = (input) => {
 
 	let array = new Array(4);
