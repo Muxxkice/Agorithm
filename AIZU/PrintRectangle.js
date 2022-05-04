@@ -23,3 +23,19 @@ const main = (input) => {
 }
 
 main(require("fs").readFileSync("/dev/stdin", "utf-8"));
+
+const GCD = (x, y) => {
+	while (x >= 1 && y >= 1) {
+		if (x > y) {
+			x = x % y
+		} else {
+			y = y % x;
+		}
+	}
+	if (x >= 1) {
+		console.log(x)
+	} else {
+		console.log(y)
+	}
+}
+GCD(12, 18)
