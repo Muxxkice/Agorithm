@@ -1,6 +1,6 @@
+//Answer Exam Randomly
 process.stdin.setEncoding('utf8');
 const main = (input) => {
-	const n = input.split("\n")[0];
 	const list = input.split("\n").slice(1);
 
 	let value = 0;
