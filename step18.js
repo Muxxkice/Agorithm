@@ -1,3 +1,4 @@
+//Convenience Store 1
 process.stdin.setEncoding('utf8');
 const main = (input) => {
 	const line = input.split("\n")[1].split(" ");
@@ -8,15 +9,15 @@ const main = (input) => {
 	line.forEach((n) => {
 
 		if (n == 100) {
-			count1++
+			count1++;
 		} else if (n == 200) {
-			count2++
+			count2++;
 		} else if (n == 300) {
-			count3++
+			count3++;
 		} else if (n == 400) {
-			count4++
+			count4++;
 		}
-	})
+	});
 	console.log(count1 * count4 + count2 * count3);
 }
 main(require("fs").readFileSync("/dev/stdin", "utf-8"));
