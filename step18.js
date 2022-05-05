@@ -1,40 +1,25 @@
-
+process.stdin.setEncoding('utf8');
 const main = (input) => {
-  const n = input.split("\n")[0];
+	const line = input.split("\n")[1].split(" ");
+	let count1 = 0;
+	let count2 = 0;
+	let count3 = 0;
+	let count4 = 0;
+	line.forEach((n) => {
 
-const GCD = (x, y) => {
-	while (x >= 1 && y >= 1) {
-		if (x > y) {
-			x = x % y
-		} else {
-			y = y % x;
+		if (n == 100) {
+			count1++
+		} else if (n == 200) {
+			count2++
+		} else if (n == 300) {
+			count3++
+		} else if (n == 400) {
+			count4++
 		}
-	}
-	if (x >= 1) {
-		return x;
-
-	} else {
-		return y;
-	}
-}
-
-const LCM = (x,y) => {
-return (x/GCD(x,y))*y
-}
-
-const num = input.split("\n")[1].split(" ");
-const a = input.split("\n")[1].split(" ")[0];
-const b = input.split("\n")[1].split(" ")[1];
-
-let lcm_num  = LCM (a,b)
-for(let i = 2; i < n ; i++ ) {
-const c = num[i]
-lcm_num = LCM(lcm_num,c);
-}
-
- console.log(lcm_num)
-
-
+	})
+	console.log(count1 * count4 + count2 * count3);
 }
 main(require("fs").readFileSync("/dev/stdin", "utf-8"));
+
+
 
