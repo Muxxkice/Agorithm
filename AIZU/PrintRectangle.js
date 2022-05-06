@@ -8,7 +8,7 @@ const printRectangle = (x, y) => {
 	}
 }
 const main = (input) => {
-	const line = input.split("\n");
+	const line = input.split("\n")
 
 	line.some((n) => {
 		const h = Number(n.split(" ")[0]);
