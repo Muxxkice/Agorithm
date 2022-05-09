@@ -1,0 +1,20 @@
+//指定された数字の約数で20000以下の合計値
+
+process.stdin.setEncoding('utf8');
+
+const main = (input) => {
+
+  let n = input;
+  let sum = 0;
+  for (let i = 1; i * i <= n; i++) {
+    if (n % i == 0 && i <= 100) {
+      sum += i;
+      if (i != n / i && n / i <= 100) {
+        sum += n / i;
+      }
+    }
+  }
+  console.log(sum)
+
+}
+main(require("fs").readFileSync("/dev/stdin", "utf-8"));
