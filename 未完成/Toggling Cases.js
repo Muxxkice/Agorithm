@@ -8,26 +8,30 @@ const main = (input) => {
 
 	let new_text = []
 	text.forEach((n, x) => {
-		s = n.split("")
+		s = n.split("");
 		s.forEach((el, y) => {
 			if (el.charCodeAt() < 65 || el.charCodeAt() > 122) {
-				new_text.push(el)
+				new_text.push(el);
 			}
 			else if (el == el.toUpperCase()) {
-				new_text.push(el.toLowerCase())
+				new_text.push(el.toLowerCase());
 			} else if (el == el.toLowerCase()) {
-				new_text.push(el.toUpperCase())
+				new_text.push(el.toUpperCase());
 			}
 		})
-		if (x != text.length) {
-			new_text.push(" ")
+		if (x < text.length - 1) {
+			new_text.push(" ");
+		}
+		else if (x == text.length - 1) {
+			new_text.push("\n");
 		}
 
 	})
 
-	console.log(new_text.join(""))
+	console.log(new_text.join(""));
 
 }
 main(require("fs").readFileSync("/dev/stdin", "utf-8"));
+
 
 
