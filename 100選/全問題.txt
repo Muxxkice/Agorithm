@@ -1,10 +1,10 @@
 AC
+1.ITP1_7_B - How Many Ways?.基本問題です。
 2.AtCoder Beginner Contest 106 B - 105
 3.AtCoder Beginner Contest 122 B - ATCoder
-
+18.ALDS_4_B - 二分探索.基本問題です。map でも解けますが二分探索で解いてみてください。
 
 全探索：全列挙
-1ITP1_7_B - How Many Ways?.基本問題です。
 4.パ研杯2019 C - カラオケ.これが解ければ全探索に慣れたと思って良いです。
 全探索：工夫して通り数を減らす全列挙
 
@@ -27,7 +27,7 @@ AC
 17.ALDS_13_A - 8 クイーン問題.面白いです。
 二分探索
 
-18.ALDS_4_B - 二分探索.基本問題です。map でも解けますが二分探索で解いてみてください。
+
 19.JOI 2009 本選 2 - ピザ
 20.AtCoder Beginner Contest 077 C - Snuke Festival.面白いです。
 21.AtCoder Beginner Contest 023 D - 射撃王.教育的に良いです。
